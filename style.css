@@ -1,0 +1,56 @@
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+.menu-container {
+position: relative;
+}
+.menu-toggle {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+position: fixed;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+padding: 900px 10px;
+background: gray;
+color: white;
+cursor: pointer;
+transition: background 0.3s;
+}
+.menu-toggle:hover {
+background: darkgray;
+}
+.sidebar {
+height: 100%;
+width: 250px;
+position: fixed;
+top: 0;
+left: -250px;
+background: gray;
+padding-top: 20px;
+transition: 0.3s;
+box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+.sidebar a {
+padding: 15px 25px;
+text-decoration: none;
+font-size: 18px;
+color: white;
+display: flex;
+align-items: center;
+transition: color 0.3s;
+}
+.sidebar a:hover {
+color: orange; 
+}
+.sidebar a .diamond {
+width: 10px;
+height: 10px;
+background: orange;
+border: 5px solid black; /* черная граница */
+transform: rotate(45deg);
+margin-right: 10px;
+transition: background 0.3s, border-color 0.3s;
+}
